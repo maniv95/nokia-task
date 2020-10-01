@@ -1,0 +1,65 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "NodeJs Application API",
+      "description": "Node.js Application API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:8081",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Files",
+        "description": "API for import,export,storing .tar files in the system"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/importTar": {
+        "post": {
+          "tags": [
+            "ImportTar"
+          ],
+          "description": "Import .tar file in system",
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/exportTar": {
+        "post": {
+          "tags": [
+            "ExportTar"
+          ],
+          "description": "Export .tar file in system",
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/getStore": {
+        "get": {
+          "tags": [
+            "getStore"
+          ],
+          "description": "Get stored files in system",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "response":[]
+            }
+          }
+        }
+      }
+    }
+  }
